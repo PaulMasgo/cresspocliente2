@@ -1,0 +1,61 @@
+<div class="main-1">
+    <div class="container">
+        <div class="register">
+            <form>
+                <div class="register-top-grid">
+                    <h3>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">INFORMACION PERSONAL</font>
+                        </font>
+                    </h3>
+                    <div class="wow fadeInLeft" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="text" maxlength="40" #Nombre>
+                    </div>
+                    <div class="wow fadeInRight" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apellido </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="text" maxlength="40" #Apellido>
+                    </div>
+                    <div class="wow fadeInRight" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de correo electrónico </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="text" maxlength="20" #Correo>
+                    </div>
+                    <div class="wow fadeInRight" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Numero de Telefono</font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="text" maxlength="12" #Telefono>
+                    </div>
+
+                    <div class="clearfix"> </div>
+
+                </div>
+                <div class="register-bottom-grid">
+                    <h3>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">INFORMACIÓN PARA INGRESO</font>
+                        </font>
+                    </h3>
+                    <div class="wow fadeInLeft" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contraseña </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="password" #password maxlength="35">
+                    </div>
+                    <div class="wow fadeInRight" data-wow-delay="0.4s">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confirmar contraseña </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                        <input type="password" maxlength="35" #password2>
+                    </div>
+                    <a class="news-letter" href="#">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked="" value="flase"><i> </i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acepto los terminos y condiciones</font></font></label>
+                    </a>
+                </div>
+            </form>
+            <div class="clearfix"> </div>
+            <div class="register-but">
+                <form>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;"><input type="submit" value="enviar" (click)="validar(Nombre.value,Apellido.value,Correo.value,Telefono.value,password.value,password2.value)"></font>
+                    </font>
+                    <div class="clearfix"> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

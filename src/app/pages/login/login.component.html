@@ -1,0 +1,58 @@
+<div class="content">
+    <div class="main-1">
+        <div class="container">
+            <div class="login-page">
+                <div class="account_grid">
+                    <div class="col-md-6 login-left">
+                        <h3>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">NUEVOS CLIENTES</font>
+                            </font>
+                        </h3>
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Al crear una cuenta en nuestra tienda, podrá moverse a través del proceso de pago más rápido, almacenar múltiples direcciones de envío, ver y rastrear sus pedidos en su cuenta y más.</font>
+                            </font>
+                        </p>
+                        <a class="acount-btn" [routerLink]="['/register']">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Crea una cuenta</font>
+                            </font>
+                        </a>
+                    </div>
+                    <div class="col-md-6 login-right">
+                        <h3>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">CLIENTES REGISTRADOS</font>
+                            </font>
+                        </h3>
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Si tiene una cuenta con nosotros, por favor inicie sesión.</font>
+                            </font>
+                        </p>
+                        <form>
+                            <div>
+                                <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de correo electrónico </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                                <input type="email" #correo>
+                            </div>
+                            <div>
+                                <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contraseña </font></font><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></label></span>
+                                <input type="password" #password>
+                            </div>
+                            <a class="forgot" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">¿Olvidaste tu contraseña? </font>&nbsp;
+                                </font>
+                            </a>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"><input type="submit" (click)="inicioSesion(correo.value,password.value)" value="Iniciar sesión"></font>
+                            </font>
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

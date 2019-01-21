@@ -1,0 +1,14 @@
+import { Categoria } from './categoria.model';
+
+export class Producto {
+    constructor(
+        public nombre:string,
+        public descripcion:string,
+        public precio:number,
+        public color:string,
+        public categoria:Categoria,
+        public imagen:string,
+        public estado?:string
+        
+    ){ }   
+}

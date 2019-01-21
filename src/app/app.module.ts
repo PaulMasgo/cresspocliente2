@@ -18,6 +18,8 @@ import { APP_ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ImagenPipe } from './pipes/imagen.pipe';
+import { ProductComponent } from './pages/product/product.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     ShoppingcarComponent,
     PaymentComponent,
-    ProfileComponent
+    ProfileComponent,
+    ImagenPipe,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

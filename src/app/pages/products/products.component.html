@@ -8,11 +8,11 @@
             </h2>
             <div class="col-md-9 product-model-sec">
                 <a href="single.html"></a>
-                <div class="product-grid">
+                <div class="product-grid" *ngFor="let item of productos">
                     <a href="single.html">
                         <div class="more-product"><span> </span></div>
                         <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="assets/images/m1.jpg" class="img-responsive" alt="">
+                            <img [src]="item.imagen.principal | imagen" class="img-responsive" alt="">
                             <div class="b-wrapper">
                                 <h4 class="b-animate b-from-left  b-delay03">
                                     <button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> + </font></font></button>
@@ -24,179 +24,20 @@
                         <div class="product-info-cust prt_name">
                             <h4>
                                 <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Producto # 1</font>
+                                    <font style="vertical-align: inherit;color: black">{{item.nombre}}</font>
                                 </font>
                             </h4>
-                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 187.95</font></font></span>
-                            <div class="ofr">
+                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S/. {{item.precio}}</font></font></span>
+                            <!-- <div class="ofr">
                                 <p class="pric1"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rs 280</font></font></del></p>
-                                <p class="disc">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">[12% de descuento]</font>
-                                    </font>
-                                </p>
-                            </div>
-                            <input type="text" class="item_quantity" value="1">
+                            </div> -->
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="+"></font>
+                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="Ver" [routerLink]="['/product/item._id']"></font>
                             </font>
                             <div class="clearfix"> </div>
                         </div>
                     </div>
                 </div>
-                <a href="single.html"></a>
-                <div class="product-grid">
-                    <a href="single.html">
-                        <div class="more-product"><span> </span></div>
-                        <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="assets/images/m2.jpg" class="img-responsive" alt="">
-                            <div class="b-wrapper">
-                                <h4 class="b-animate b-from-left  b-delay03">
-                                    <button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> + </font></font></button>
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info simpleCart_shelfItem">
-                        <div class="product-info-cust prt_name">
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Producto # 1</font>
-                                </font>
-                            </h4>
-                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 187.95</font></font></span>
-                            <div class="ofr">
-                                <p class="pric1"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rs 280</font></font></del></p>
-                                <p class="disc">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">[12% de descuento]</font>
-                                    </font>
-                                </p>
-                            </div>
-                            <input type="text" class="item_quantity" value="1">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="+"></font>
-                            </font>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="single.html"></a>
-                <div class="product-grid">
-                    <a href="single.html">
-                        <div class="more-product"><span> </span></div>
-                        <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="assets/images/m3.jpg" class="img-responsive" alt="">
-                            <div class="b-wrapper">
-                                <h4 class="b-animate b-from-left  b-delay03">
-                                    <button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> + </font></font></button>
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info simpleCart_shelfItem">
-                        <div class="product-info-cust prt_name">
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Producto # 1</font>
-                                </font>
-                            </h4>
-                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 187.95</font></font></span>
-                            <div class="ofr">
-                                <p class="pric1"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rs 280</font></font></del></p>
-                                <p class="disc">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">[12% de descuento]</font>
-                                    </font>
-                                </p>
-                            </div>
-                            <input type="text" class="item_quantity" value="1">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="+"></font>
-                            </font>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="single.html"></a>
-                <div class="product-grid">
-                    <a href="single.html">
-                        <div class="more-product"><span> </span></div>
-                        <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="assets/images/m4.jpg" class="img-responsive" alt="">
-                            <div class="b-wrapper">
-                                <h4 class="b-animate b-from-left  b-delay03">
-                                    <button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> + </font></font></button>
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info simpleCart_shelfItem">
-                        <div class="product-info-cust prt_name">
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Producto # 1</font>
-                                </font>
-                            </h4>
-                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 187.95</font></font></span>
-                            <div class="ofr">
-                                <p class="pric1"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rs 280</font></font></del></p>
-                                <p class="disc">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">[12% de descuento]</font>
-                                    </font>
-                                </p>
-                            </div>
-                            <input type="text" class="item_quantity" value="1">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="+"></font>
-                            </font>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="single.html"></a>
-                <div class="product-grid">
-                    <a href="single.html">
-                        <div class="more-product"><span> </span></div>
-                        <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="assets/images/m5.jpg" class="img-responsive" alt="">
-                            <div class="b-wrapper">
-                                <h4 class="b-animate b-from-left  b-delay03">
-                                    <button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> + </font></font></button>
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info simpleCart_shelfItem">
-                        <div class="product-info-cust prt_name">
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Producto # 1</font>
-                                </font>
-                            </h4>
-                            <span class="item_price"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 187.95</font></font></span>
-                            <div class="ofr">
-                                <p class="pric1"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rs 280</font></font></del></p>
-                                <p class="disc">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">[12% de descuento]</font>
-                                    </font>
-                                </p>
-                            </div>
-                            <input type="text" class="item_quantity" value="1">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;"><input type="button" class="item_add items" value="+"></font>
-                            </font>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
             <div class="rsidebar span_1_of_left">
                 <section class="sky-form">

@@ -1,4 +1,5 @@
 import { Categoria } from './categoria.model';
+import { Imagen } from './imagen.models';
 
 export class Producto {
     constructor(
@@ -7,7 +8,7 @@ export class Producto {
         public precio:number,
         public color:string,
         public categoria:Categoria,
-        public imagen:string,
+        public imagen?:Imagen,
         public estado?:string
         
     ){ }   

@@ -6,6 +6,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ProductComponent } from './pages/product/product.component';
 
 const app_routes :Routes =[
     {path:'home',component:HomeComponent},
@@ -14,6 +15,7 @@ const app_routes :Routes =[
     {path:'register',component:RegisterComponent},
     {path:'profile',component:ProfileComponent},
     {path:'about',component:AboutComponent},
+    {path:'product/:id',component:ProductComponent},
     {path:'contact',component:ContactComponent},
     {path:'',redirectTo:'/home',pathMatch:'full'}
 ];
